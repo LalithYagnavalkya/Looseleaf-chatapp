@@ -37,7 +37,7 @@ const Page = styled.div`
   box-sizing: border-box;
   display: flex;
   align-items: center;
-  background-color: antiquewhite;
+  background-color: azure;
 
   height: 100vh;
 `;

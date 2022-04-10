@@ -3,7 +3,7 @@ import { auth, db } from "../firebase";
 import styled from "styled-components";
 import firebase from "firebase/compat/app";
 
-const SendMessage = () => {
+const SendMessage = ({ scroll }) => {
   const [msg, setMessage] = useState("");
 
   const sendMessage = async (e) => {
@@ -17,6 +17,7 @@ const SendMessage = () => {
         createdAt: firebase.firestore.FieldValue.serverTimestamp(),
       });
     }
+    scroll.current.scrollIntoView({ behavior: "smooth" });
     setMessage("");
   };
   return (
@@ -47,7 +48,7 @@ const Wrapper = styled.div`
   height: 10%;
   display: flex;
   width: 100%;
-  padding: 0.3rem 0;
+  padding: 0.3rem 0 0rem 0;
   form {
     display: flex;
     width: 100%;
@@ -72,10 +73,13 @@ const Wrapper = styled.div`
     align-items: center;
     height: 1.9rem;
     border: 1px solid black;
-    background-color: white;
+    /* background-color: white; */
+    background-color: #363636;
     border-radius: 30px;
     width: 95%;
     input {
+      background-color: #363636;
+      color: white;
       border: none;
       width: 90%;
       outline: none;
