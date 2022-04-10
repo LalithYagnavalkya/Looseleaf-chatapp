@@ -18,9 +18,9 @@ function App() {
     );
   }
   return (
-    <Wrapper>
+    <Page>
       <Chat />
-    </Wrapper>
+    </Page>
   );
 }
 
@@ -31,5 +31,14 @@ const Wrapper = styled.div`
   background-color: antiquewhite;
   height: 100vh;
 `;
+const Page = styled.div`
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  background-color: antiquewhite;
 
+  height: 100vh;
+`;
 export default App;

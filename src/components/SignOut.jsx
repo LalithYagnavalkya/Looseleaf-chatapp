@@ -10,21 +10,9 @@ function SignOut() {
 }
 
 const SingOutPage = styled.div`
-  position: absolute;
-  right: 0;
-
-  background-color: azure;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  .logo {
-    margin-top: -8rem;
-    margin-bottom: 5rem;
-  }
   button {
     padding: 0.5rem 1rem;
-    background-color: #222212;
+    background-color: #161612;
     border-radius: 10px;
     color: white;
     border: none;
@@ -34,6 +22,11 @@ const SingOutPage = styled.div`
     img {
       height: 30px;
       width: 30px;
+    }
+  }
+  @media (max-width: 440px) {
+    button {
+      height: 30px;
     }
   }
 `;
