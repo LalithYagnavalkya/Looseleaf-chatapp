@@ -3,13 +3,13 @@ import "firebase/compat/auth";
 import "firebase/compat/firestore";
 
 const firebaseApp = firebase.initializeApp({
-  apiKey: "AIzaSyC9eDo1f-BwWn9-5g5UQXPM1ST2xPlXj78",
+  apiKey: process.env.REACT_APP_API_KEY,
   authDomain: "looseleaftassignment.firebaseapp.com",
   projectId: "looseleaftassignment",
   storageBucket: "looseleaftassignment.appspot.com",
-  messagingSenderId: "406940863270",
-  appId: "1:406940863270:web:ebfc4e8cdc6f9509968fe7",
-  measurementId: "G-4ZCMNJB6F5",
+  messagingSenderId: process.env.REACT_APP_MESSAGING_SENDERID,
+  appId: process.env.REACT_APP_APPID,
+  measurementId: process.env.REACT_APP_MEASUREMENTID,
 });
 
 const db = firebaseApp.firestore();
