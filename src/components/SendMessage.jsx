@@ -17,8 +17,9 @@ const SendMessage = ({ scroll }) => {
         createdAt: firebase.firestore.FieldValue.serverTimestamp(),
       });
     }
-    scroll.current.scrollIntoView({ behavior: "smooth" });
     setMessage("");
+    scroll.current.scrollIntoView({ behavior: "smooth" });
+    
   };
   return (
     <Wrapper>

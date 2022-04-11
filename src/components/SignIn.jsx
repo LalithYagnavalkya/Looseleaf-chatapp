@@ -50,6 +50,23 @@ const SingInPage = styled.div`
       width: 30px;
     }
   }
+  @media (max-width: 800px) {
+    .logo {
+      height: 9rem;
+    }
+    button {
+      /* height: 3rem; */
+    }
+  }
+  }
+  @media (max-width: 430px) {
+    .logo {
+      height: 7rem;
+    }
+    button {
+      /* height: 3rem; */
+    }
+  }
 `;
 
 export default SignIn;
